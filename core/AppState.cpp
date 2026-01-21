@@ -40,6 +40,11 @@ void AppState::setAlgorithm(AlgorithmType type)
     resetAlgorithm();
 }
 
+AppState::AlgorithmType AppState::algorithm() const
+{
+    return m_algorithmType;
+}
+
 void AppState::resetAlgorithm()
 {
     m_hull.clear();
@@ -53,6 +58,7 @@ void AppState::step()
         return;
     }
 
+    m_elapsedMs.start();
     m_hull = m_p_algorithm->computeHull(m_points);
     m_finished = true;
 
@@ -72,4 +78,14 @@ const std::vector<Point>& AppState::hull() const
 bool AppState::finished() const
 {
     return m_finished;
+}
+
+double AppState::elapsedTimeMs() const
+{
+    return m_elapsedMs.nsecsElapsed() / 1e9;;
+}
+
+QString AppState::algorithmName() const
+{
+    return m_p_algorithm ? m_p_algorithm->name() : "None";
 }

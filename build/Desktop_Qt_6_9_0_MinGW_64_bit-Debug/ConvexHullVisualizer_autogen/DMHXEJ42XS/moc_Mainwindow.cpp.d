@@ -1,5 +1,6 @@
 C:/Qt/Qt_Projects/ConvexHullVisualizer/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ConvexHullVisualizer_autogen/DMHXEJ42XS/moc_Mainwindow.cpp: C:/Qt/Qt_Projects/ConvexHullVisualizer/gui/Mainwindow.h \
   C:/Qt/Qt_Projects/ConvexHullVisualizer/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ConvexHullVisualizer_autogen/moc_predefs.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/QElapsedTimer \
   C:/Qt/6.9.0/mingw_64/include/QtCore/QObject \
   C:/Qt/6.9.0/mingw_64/include/QtCore/QString \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q17memory.h \
@@ -37,6 +38,7 @@ C:/Qt/Qt_Projects/ConvexHullVisualizer/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug
   C:/Qt/6.9.0/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qelapsedtimer.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qflags.h \

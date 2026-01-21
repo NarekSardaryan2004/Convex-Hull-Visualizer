@@ -2,6 +2,7 @@
 #define APPSTATE_H
 
 #include <QObject>
+#include <QElapsedTimer>
 #include <vector>
 #include <memory>
 
@@ -24,12 +25,16 @@ public:
     void clear();
 
     void setAlgorithm(AlgorithmType type);
+    AlgorithmType algorithm() const;
     void resetAlgorithm();
     void step();
 
     const std::vector<Point>& points() const;
     const std::vector<Point>& hull() const;
     bool finished() const;
+
+    double elapsedTimeMs() const;
+    QString algorithmName() const;
 
 signals:
     void stateChanged();
@@ -45,6 +50,7 @@ private:
     std::unique_ptr<ConvexHullAlgorithm> m_p_algorithm;
 
     bool m_finished;
+    QElapsedTimer m_elapsedMs;
 };
 
 #endif // APPSTATE_H

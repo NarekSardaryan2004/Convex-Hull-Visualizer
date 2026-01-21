@@ -15,8 +15,10 @@ public:
 
 private slots:
     void onAddPoint();
-    void onStep();
     void onClear();
+
+    // void onSelectAndrew();
+    // void onSelectGraham();
 
 private:
     AppState* m_p_state;
