@@ -10,6 +10,7 @@ public:
     ~AndrewsAlgorithm() override = default;
 
     std::vector<Point> computeHull(const std::vector<Point>& points) override;
+    std::vector<AnimationStep> generateSteps(const std::vector<Point>& points) override;
     QString name() const override;
 
 private:

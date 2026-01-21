@@ -40,12 +40,22 @@ template <> constexpr inline auto AppState::qt_create_metaobjectdata<qt_meta_tag
     QtMocHelpers::StringRefStorage qt_stringData {
         "AppState",
         "stateChanged",
-        ""
+        "",
+        "stepChanged",
+        "current",
+        "total",
+        "onTimerTick"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'stateChanged'
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'stepChanged'
+        QtMocHelpers::SignalData<void(int, int)>(3, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 4 }, { QMetaType::Int, 5 },
+        }}),
+        // Slot 'onTimerTick'
+        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -70,11 +80,15 @@ void AppState::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->stateChanged(); break;
+        case 1: _t->stepChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 2: _t->onTimerTick(); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (AppState::*)()>(_a, &AppState::stateChanged, 0))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (AppState::*)(int , int )>(_a, &AppState::stepChanged, 1))
             return;
     }
 }
@@ -98,14 +112,14 @@ int AppState::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 3;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        _id -= 3;
     }
     return _id;
 }
@@ -114,5 +128,11 @@ int AppState::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void AppState::stateChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void AppState::stepChanged(int _t1, int _t2)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1, _t2);
 }
 QT_WARNING_POP

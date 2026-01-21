@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QElapsedTimer>
+#include <QTimer>
 #include <vector>
 #include <memory>
 
@@ -29,6 +30,17 @@ public:
     void resetAlgorithm();
     void step();
 
+    void startAnimation();
+    void pauseAnimation();
+    void stepForward();
+    void stepBackward();
+    void setAnimationSpeed(int speedMs);
+
+    const AnimationStep* currentStep() const;
+    int currentStepIndex() const;
+    int totalSteps() const;
+    bool isAnimating() const;
+
     const std::vector<Point>& points() const;
     const std::vector<Point>& hull() const;
     bool finished() const;
@@ -38,9 +50,15 @@ public:
 
 signals:
     void stateChanged();
+    void stepChanged(int current, int total);
+
+private slots:
+    void onTimerTick();
 
 private:
     void createAlgorithm();
+    void generateAnimationSteps();
+    void applyCurrentStep();
 
 private:
     std::vector<Point> m_points;
@@ -51,6 +69,12 @@ private:
 
     bool m_finished;
     QElapsedTimer m_elapsedMs;
+
+    std::vector<AnimationStep> m_animationSteps;
+    int m_currentStepIndex;
+    bool m_isAnimating;
+    QTimer* m_animationTimer;
+    int m_animationSpeedMs;
 };
 
 #endif // APPSTATE_H

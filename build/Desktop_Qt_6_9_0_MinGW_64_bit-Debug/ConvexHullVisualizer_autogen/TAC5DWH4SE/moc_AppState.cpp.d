@@ -3,10 +3,12 @@ C:/Qt/Qt_Projects/ConvexHullVisualizer/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug
   C:/Qt/6.9.0/mingw_64/include/QtCore/QElapsedTimer \
   C:/Qt/6.9.0/mingw_64/include/QtCore/QObject \
   C:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20type_traits.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qarraydata.h \
@@ -16,6 +18,7 @@ C:/Qt/Qt_Projects/ConvexHullVisualizer/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug
   C:/Qt/6.9.0/mingw_64/include/QtCore/qatomic.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qbasicatomic.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qbindingstorage.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qbytearray.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -33,7 +36,9 @@ C:/Qt/Qt_Projects/ConvexHullVisualizer/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug
   C:/Qt/6.9.0/mingw_64/include/QtCore/qcontainertools_impl.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qdatastream.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qelapsedtimer.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qfloat16.h \
@@ -93,6 +98,7 @@ C:/Qt/Qt_Projects/ConvexHullVisualizer/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug
   C:/Qt/6.9.0/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qtformat_impl.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qtnoop.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qtpreprocessorsupport.h \
